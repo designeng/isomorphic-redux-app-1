@@ -27,9 +27,9 @@ React.render(
             </ReduxRouter>
         }
     </Provider>,
-    document.getElementById('root')
+    rootElement
 );
 
-//if (process.env.NODE_ENV !== 'production') {
-//    require('../server/devtools')(store);
-//}
+if (process.env.NODE_ENV !== 'production') {
+   require('../server/devtools')(store);
+}
