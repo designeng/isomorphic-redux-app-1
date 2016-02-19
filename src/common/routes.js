@@ -12,7 +12,7 @@ import TodoPage from "./containers/TodoPage";
 import HomePage from "./components/Home";
 import AboutPage from "./components/About";
 import BlogPage from "./components/Blog";
-import AddArticlePage from "./components/articles/Article";
+import AddArticlePage from "./components/articles/ArticleForm";
 import error404 from "./components/404";
 
 export default (

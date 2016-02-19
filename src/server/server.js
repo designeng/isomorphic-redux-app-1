@@ -5,6 +5,8 @@ import webpackConfig from '../../webpack.config';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 
+import fetchArticles from '../common/api/fetchArticles';
+
 import React from 'react';
 import { RoutingContext, match } from 'react-router';
 import { Provider } from 'react-redux';
@@ -13,7 +15,6 @@ import { fetchComponentDataBeforeRender } from '../common/api/fetchComponentData
 
 import configureStore from '../common/store/configureStore';
 import { getUser } from '../common/api/user';
-import fetchArticles from '../common/api/fetchArticles';
 import routes from '../common/routes';
 import packagejson from '../../package.json';
 delete process.env.BROWSER;
